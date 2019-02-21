@@ -6,21 +6,12 @@
   </head>
   <body>
     <h1>Person info</h1>
-    <p>Post array: </p>
-    <form class="" action="index.html" method="GET">
+    <p>Get array: </p>
+    <form class="" action="person2.html" method="GET">
     <?php
-    $names=array(
-      array("fname"=>'Jim', "lname"=>'Smith')
-    );
-     ?>
-     <?php print_r($names); ?>
-     <?php
-     $firstname='Jim';
-     $lastname='Smith';
+     echo 'First name is '.$_GET['fname'];
      echo '<br>';
-     echo 'First name is '.$firstname;
-     echo '<br>';
-     echo 'Last name is '.$lastname;
+     echo 'Last name is '.$_GET['lname'];
       ?>
     </form>
   </body>
